@@ -12,6 +12,7 @@
 <img  id="img" src="2.jpg" alt="img" width="160" height="160">
 
 <div id="div1"></div>
+<div id="exercice"></div>
 
 <script>
      document.getElementById("demo").innerHTML = "Hello world!";
@@ -24,6 +25,28 @@
      para.appendChild(node);
      const element = document.getElementById("div1");
      element.appendChild(para);
+
+    //  -------------------------------------------------
+
+     const myimg = document.createElement("img");
+     const source = document.createAttribute("src");
+     const text = document.createTextNode("2.jpg");
+     const idImg = document.createAttribute("id");
+     const idText = document.createTextNode("myid");
+     myimg.appendChild(source);
+
+     myimg.src="2.jpg";
+     source.appendChild(text);
+
+
+    //  myimg.appendChild(id);
+    //  idImg.appendChild(idText);
+    const test1 = document.getElementById("myid").src="2.jpg";
+     test1.appendChild(myimg);
+
+     const test2 = document.getElementById("exercice");
+     test.appendChild(myimg);
+
 
 
 </script>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>DOM Navigation</h1>
+    <h2 id="id1-1">  use innerHTML</h2>
+    <p id="id1-2"></p>
+    <h2 id="id2-1"> Child Nodes and Node Values use (firstChild.nodeValue)</h2>
+    <p id="id2-2"></p>
+    <h2 id="id3-1" >Child Nodes and Node Values use (childNodes[0].nodeValue)</h2>
+    <p id="id3-2"></p>
+
+
+    <h1>DOM Nodes</h1>
+
+    <div id="demo"></div>
+
+    <div id="demo2">
+       <p id="p1">this is a first paragraph</p>
+       <p id="p2">this is a secend paragraph</p>
+    </div>
+   
+
+
+<script>
+
+    
+
+    // DOM NAVIGATION
+    document.getElementById("id1-2").innerHTML = document.getElementById("id1-1").innerHTML;
+    document.getElementById("id2-2").innerHTML = document.getElementById("id2-1").firstChild.nodeValue;
+    document.getElementById("id3-2").innerHTML = document.getElementById("id3-1").childNodes[0].nodeValue;
+
+    //DOM CSS
+
+    document.getElementById("id1-2").style.color = "blue";
+
+    // DOM Nodes
+    // Creating New HTML Elements (Nodes)
+
+    const para = document.createElement("p");
+    const node = document.createTextNode("Creating New HTML Elements (Nodes)");
+    para.appendChild(node);
+    const element = document.getElementById("demo");
+    element.appendChild(para);
+
+    // Creating new HTML Elements - insertBefore()
+
+    const parag = document.createElement("p");
+    const txtnode = document.createTextNode("this is a new paragraph");
+    parag.appendChild(txtnode);
+    const elm = document.getElementById("demo2");
+    const child = document.getElementById("p1");
+    
+    elm.insertBefore(parag , child);
+
+    
+    //Removing Existing HTML Elements
+
+    const elementdelete = document.getElementById("p2");
+    elementdelete.remove();
+
+    // Replacing HTML Elements 
+    
+    const newChild = document.createElement("p");
+    const newNode = document.createTextNode("this is a secend paragraph");
+    newChild.appendChild(newNode);
+    
+    const parent = document.getElementById("demo2");
+    const oldChild = document.getElementById("p1");
+    parent.replaceChild(newChild,oldChild);
+
+
+
+
+
+    
+
+    
+
+
+
+</script>
+
+
+</body>
+</html>

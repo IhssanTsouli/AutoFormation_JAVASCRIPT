@@ -16,11 +16,3 @@ const s ="ihssan"
 console.log(s);
 
 
-//Arrow Functions
-//  var x = function(x,y){
-//     return x*y;
-//  }
-// ES6
-const x =(x,y) =>x*y;
-
-document.getElementById("domo").innerHTML = x(5, 5);
