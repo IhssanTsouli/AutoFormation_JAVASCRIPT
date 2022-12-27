@@ -9,10 +9,11 @@
 //    return n * n;
 // }
 
-//const square = n => n * n;
+const square = n => n * n;
 
-// console.log(square(2));
+console.log(square(2));
 
+//-----------------------------------------
 const designers = [
     {name:'Ihssan', free: true},
     {name:'Iman', free: false},
