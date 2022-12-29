@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+<select  id="lang" onchange="change()">
+    <option value="javaScript">javaScript</option>
+    <option value="kotlin">kotlin</option>
+    <option value="java">java</option>
+    <option value="php">php</option>
+    <option value="python">python</option>
+</select>
+
+<div id="demo"></div>
+
+<script>
+
+    const change=()=>{
+       let s = document.getElementById("lang").value; 
+       document.getElementById("demo").innerHTML = "You selected: "+ s;
+    }
+
+</script>
+
+</body>
+</html>
