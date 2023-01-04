@@ -1,7 +1,7 @@
-  const Inscrition = (age,condition) =>{
+  const Inscription = (age,condition) =>{
     condition = () =>{
         return age<35 ? 'true' : 'false';
    }
     console.log(condition());
    }
-  Inscrition(40);
+  Inscription(40);
