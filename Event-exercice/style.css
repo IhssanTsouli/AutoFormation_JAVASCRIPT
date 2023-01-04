@@ -1,8 +1,8 @@
 tr{
-    width: 50px;
-    height: 20px;
+    height: 30px; 
+    width: 200px;
 }
-td{
-    width: 180px;
-    height: 20px;
+td,th{
+    height: 30px;
+    width: 200px;
 }

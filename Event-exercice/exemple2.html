@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   Name : <input type="text" id="name">
+    Age : <input type="text" id="age">
+    <button onclick="add()">Add</button>
+    <br><br>
+
+    <table border="1">
+        <tr>
+            <th>name</th>
+            <th>age</th>
+        </tr>
+
+    </table>
+  
+
+    <script>
+
+        function add(){
+            const name = document.getElementById('name').value;
+            const age = document.getElementById('age').value;
+            const table = document.getElementsByTagName('table')[0];
+            const newRow = table.insertRow(1);
+            const cel1 = newRow.insertCell(0);
+            const cel2 = newRow.insertCell(1);
+
+            cel1.innerHTML = name;
+            cel2.innerHTML = age;
+
+            document.getElementById('name').value="";
+            document.getElementById('age').value="";
+
+        }
+
+    </script>
+
+
+</body>
+</html>
