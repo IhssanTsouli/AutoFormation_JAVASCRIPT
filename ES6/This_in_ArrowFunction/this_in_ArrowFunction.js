@@ -3,11 +3,10 @@
 //         setTimeout(function(){
 //             console.log("designer",this) 
 //         }, 1000);
-        
+   
 
 //     }
 // }
-
 
 // Arrow function
 
@@ -16,8 +15,6 @@ const designer = {
         setTimeout(() => {
             console.log("designer",this) 
         }, 1000);
-        
-
     }
 }
 

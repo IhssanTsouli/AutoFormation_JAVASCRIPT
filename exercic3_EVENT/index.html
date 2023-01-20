@@ -20,22 +20,22 @@
     <script>
         function add(){
        
-            // get input values
-            var name = document.getElementById('name').value;
+             // get input values
+             var name = document.getElementById('name').value;
            
              
               // get the html table
             
               var table = document.getElementsByTagName('table')[0]; 
               
-              var newRow = table.insertRow(table.rows[0]);
+              var newRow = table.insertRow(0);
               
               // add cells to the row
               var cel1 = newRow.insertCell(0);
               
               // add values to the cells
               cel1.innerHTML = name;
-             document.getElementById('name').value="";
+              document.getElementById('name').value="";
         }
    
     </script>

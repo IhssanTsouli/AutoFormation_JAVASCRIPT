@@ -28,6 +28,8 @@
             const name = document.getElementById('name').value;
             const age = document.getElementById('age').value;
             const table = document.getElementsByTagName('table')[0];
+            // const newRow = table.insertRow(table.rows.length/2+1);  insert a row in the middle
+            // const newRow = table.insertRow(table.rows.length);  insert a row in the end
             const newRow = table.insertRow(1);
             const cel1 = newRow.insertCell(0);
             const cel2 = newRow.insertCell(1);

@@ -2,6 +2,6 @@
     condition = () =>{
         return age<35 ? 'true' : 'false';
    }
-    console.log(condition());
+     console.log(condition());
    }
-  Inscription(40);
+Inscription(40);
